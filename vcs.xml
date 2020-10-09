@@ -14,6 +14,10 @@
           <option name="url" value="git@gitlab.gizwits.com:aep/aep-cloud.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="git@gitlab.gizwits.com:aep/aep-saas-cloud.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
     <option name="cloneParentDir" value="$USER_HOME$/IdeaProjects/gizwits" />
