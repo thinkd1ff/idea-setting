@@ -10,5 +10,6 @@
     <mask>*.properties</mask>
     <mask>*.java</mask>
     <mask>application-gie.yml</mask>
+    <mask>*xml</mask>
   </component>
 </application>
