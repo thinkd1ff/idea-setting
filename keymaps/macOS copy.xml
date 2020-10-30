@@ -8,6 +8,10 @@
   <action id="Maven.Reimport">
     <keyboard-shortcut first-keystroke="shift meta p" />
   </action>
+  <action id="ShowIntentionActions">
+    <keyboard-shortcut first-keystroke="alt enter" />
+    <keyboard-shortcut first-keystroke="meta space" />
+  </action>
   <action id="Tool.GotoRequestService">
     <keyboard-shortcut first-keystroke="meta back_slash" />
   </action>
