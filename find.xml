@@ -5,10 +5,15 @@
     <option name="SEARCH_SCOPE" value="All Places" />
     <mask>*.css</mask>
     <mask>*.html</mask>
-    <mask>*.xml</mask>
     <mask>*.jsp</mask>
     <mask>*.properties</mask>
-    <mask>*.java</mask>
     <mask>application-gie.yml</mask>
+    <mask>*iml</mask>
+    <mask>*xml</mask>
+    <mask>*yml</mask>
+    <mask>*.java</mask>
+    <mask>*</mask>
+    <mask>*.yml</mask>
+    <mask>*.xml</mask>
   </component>
 </application>
