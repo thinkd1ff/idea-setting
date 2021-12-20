@@ -1,7 +1,0 @@
-<application>
-  <component name="UISettings">
-    <option name="COLOR_BLINDNESS" value="deuteranopia" />
-    <option name="CONSOLE_COMMAND_HISTORY_LIMIT" value="1000" />
-    <option name="IDE_AA_TYPE" value="Greyscale" />
-  </component>
-</application>
