@@ -1,6 +1,10 @@
 <application>
   <component name="easyJavadoc">
     <option name="author" value="shaoyu.huang" />
+    <option name="genAllClass" value="true" />
+    <option name="genAllField" value="true" />
+    <option name="genAllInnerClass" value="false" />
+    <option name="genAllMethod" value="false" />
     <option name="simpleFieldDoc" value="true" />
   </component>
 </application>
