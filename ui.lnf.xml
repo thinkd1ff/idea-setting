@@ -2,6 +2,7 @@
   <component name="UISettings">
     <option name="CONSOLE_COMMAND_HISTORY_LIMIT" value="1000" />
     <option name="FULL_PATHS_IN_TITLE_BAR" value="true" />
+    <option name="PRESENTATION_MODE_FONT_SIZE" value="13" />
     <option name="SHOW_MAIN_TOOLBAR" value="true" />
   </component>
 </application>
