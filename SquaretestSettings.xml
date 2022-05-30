@@ -1,5 +1,40 @@
 <application>
   <component name="SquaretestSettings">
+    <option name="usageStatsEnabled" value="true" />
+    <option name="projectNameToSettingsMap">
+      <map>
+        <entry key="weather-project">
+          <value>
+            <ProjectSettings>
+              <option name="projectName" value="weather-project" />
+              <option name="templateLanguage" value="Java" />
+              <option name="template">
+                <Template>
+                  <option name="presentationName" value="JUnit4MockitoSpringAssertJ.java.ft" />
+                  <option name="internalTemplateSaveName" value="SQTJ-JUnit4MockitoSpringAssertJ.java" />
+                  <option name="isInternal" value="true" />
+                </Template>
+              </option>
+              <option name="moduleAutoConfigSetting" value="AUTOMATICALLY_CONFIGURE_WHEN_POSSIBLE" />
+            </ProjectSettings>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="projectNameModuleNameToSettingsMap">
+      <map>
+        <entry key="weather-project_g-weather-server">
+          <value>
+            <ModuleSettings>
+              <option name="moduleName" value="g-weather-server" />
+              <option name="testDirectoryRoot" value="g-weather-server/src/test/java" />
+            </ModuleSettings>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="collectUsageStats" value="true" />
+    <option name="hasShownMetricsDisclosure" value="true" />
     <option name="id" value="3dcc3428-982a-4c77-a339-06ac3a43354c" />
   </component>
 </application>
