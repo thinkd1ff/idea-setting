@@ -1,5 +1,6 @@
 <application>
   <component name="NotificationConfiguration" showBalloons="false" systemNotifications="false">
+    <notification groupId="Easy Javadoc" shouldLog="false" />
     <notification groupId="Language Plugins Notifications" shouldLog="false" />
   </component>
 </application>
