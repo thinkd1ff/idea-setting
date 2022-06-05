@@ -1,10 +1,14 @@
 <application>
   <component name="easyJavadoc">
+    <option name="appId" value="" />
     <option name="author" value="shaoyu.huang" />
     <option name="genAllClass" value="true" />
     <option name="genAllField" value="false" />
     <option name="genAllInnerClass" value="false" />
     <option name="genAllMethod" value="false" />
+    <option name="secretId" value="" />
+    <option name="secretKey" value="" />
     <option name="simpleFieldDoc" value="true" />
+    <option name="token" value="" />
   </component>
 </application>
