@@ -1,0 +1,40 @@
+<templateSet group="custom">
+  <template name="log" value="private static final org.slf4j.Logger LOGGER = org.slf4j.LoggerFactory.getLogger($CLASS$.class);" shortcut="ENTER" description="Creates SLF4J Logger" toReformat="true" toShortenFQNames="true">
+    <variable name="CLASS" expression="className()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+    </context>
+  </template>
+  <template name="test" value="@org.junit.jupiter.api.Test&#10;void test$Function$() throws java.lang.Exception {&#10;    org.assertj.core.api.Assertions.assertThat(&quot;&quot;).isEqualTo(&quot;false&quot;);&#10;}" description="Creates JUnit test" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="Function" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_CONSUMER" value="false" />
+    </context>
+  </template>
+  <template name="id" value="@javax.persistence.Id&#10;@javax.persistence.GeneratedValue(generator = &quot;system-uuid&quot;)&#10;@org.hibernate.annotations.GenericGenerator(name = &quot;system-uuid&quot;, strategy = &quot;uuid&quot;)&#10;private String id;&#10;&#10;" description="Creates entity id field with UUID" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="testmvc" value="@org.springframework.beans.factory.annotation.Autowired&#10;private org.springframework.test.web.servlet.MockMvc mockMvc;&#10;&#10;@org.junit.jupiter.api.Test&#10;void test$Function$() throws java.lang.Exception {&#10;    org.springframework.test.web.servlet.request.MockHttpServletRequestBuilder request = org.springframework.test.web.servlet.request.MockMvcRequestBuilders&#10;            .get(&quot;&quot;)&#10;            .contentType(org.springframework.http.MediaType.APPLICATION_JSON);&#10;&#10;    mockMvc.perform(request)&#10;            .andExpect(org.springframework.test.web.servlet.result.MockMvcResultMatchers.status().isOk())&#10;            .andExpect(org.springframework.test.web.servlet.result.MockMvcResultMatchers.content().contentType(org.springframework.http.MediaType.APPLICATION_JSON))&#10;            .andExpect(org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath(&quot;&quot;, org.hamcrest.Matchers.is(&quot;&quot;)));&#10;}" description="Creates JUnit test method with MockMvc" toReformat="true" toShortenFQNames="true">
+    <variable name="Function" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="testfile" value="java.net.URL resource = getClass().getResource(&quot;$Function$&quot;);&#10;java.nio.file.Path filePath = java.nio.file.Paths.get(resource.toURI());" description="Get file from resources for testing" toReformat="true" toShortenFQNames="true">
+    <variable name="Function" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="bytesfile" value="try (java.io.InputStream is = getClass().getClassLoader().getResourceAsStream(&quot;$Function$&quot;)) {&#10;    byte[] bytes = is.readAllBytes();&#10;}" description="Get byte[] from resources file" toReformat="false" toShortenFQNames="true">
+    <variable name="Function" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+</templateSet>
