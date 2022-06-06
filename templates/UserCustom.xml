@@ -1,0 +1,6 @@
+<templateSet group="UserCustom">
+  <template name="lgdv" value="System.out.println(&quot;$EXPR_COPY$ = {} &quot; , $EXPR$);" description="log debug" toReformat="false" toShortenFQNames="true">
+    <variable name="EXPR_COPY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="EXPR" expression="" defaultValue="" alwaysStopAt="true" />
+  </template>
+</templateSet>
