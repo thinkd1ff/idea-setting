@@ -1,6 +1,42 @@
 <templateSet group="UserCustom">
-  <template name="lgdv" value="System.out.println(&quot;$EXPR_COPY$ = {} &quot; , $EXPR$);" description="log debug" toReformat="false" toShortenFQNames="true">
-    <variable name="EXPR_COPY" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="EXPR" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="lgd" value="if (log.isDebugEnabled()) {&#10;  log.debug(&quot;$EXPR_COPY$ = {} &quot; , $EXPR$);&#10;}&#10;" description="log.debug" toReformat="true" toShortenFQNames="true">
+    <variable name="EXPR_COPY" expression="escapeString(EXPR)" defaultValue="" alwaysStopAt="true" />
+    <variable name="EXPR" expression="variableOfType(&quot;&quot;)" defaultValue="&quot;expr&quot;" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="lgw" value="if (log.isWarnEnabled()) {&#10;  log.warn(&quot;$EXPR_COPY$ = {} &quot; , $EXPR$);&#10;}&#10;" description="log.warn" toReformat="true" toShortenFQNames="true">
+    <variable name="EXPR_COPY" expression="escapeString(EXPR)" defaultValue="" alwaysStopAt="true" />
+    <variable name="EXPR" expression="variableOfType(&quot;&quot;)" defaultValue="&quot;expr&quot;" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="lgi" value="log.info(&quot;$EXPR_COPY$ = {} &quot; , $EXPR$);&#10;&#10;" description="log.info" toReformat="true" toShortenFQNames="true">
+    <variable name="EXPR_COPY" expression="escapeString(EXPR)" defaultValue="" alwaysStopAt="true" />
+    <variable name="EXPR" expression="variableOfType(&quot;&quot;)" defaultValue="&quot;expr&quot;" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="pcm" value="public $VAR$ $VAR2$($VAR1$){&#10;&#10;}" description="create method" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="prvm" value="private void method(){&#10;&#10;}" description="create method" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="cc" value="@ApiOperation(&quot;&quot;)&#10; @$VAR$Mapping(&quot;&quot;)&#10; public void method() {&#10;}" description="create controller" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
   </template>
 </templateSet>
