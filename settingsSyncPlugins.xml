@@ -102,6 +102,17 @@
             </PluginData>
           </value>
         </entry>
+        <entry key="com.github.wenzewoo.jetbrains.plugin.jetbrains-markdown-image-support">
+          <value>
+            <PluginData>
+              <option name="dependencies">
+                <set>
+                  <option value="com.intellij.modules.lang" />
+                </set>
+              </option>
+            </PluginData>
+          </value>
+        </entry>
         <entry key="com.jetbrains.codeWithMe">
           <value>
             <PluginData>
@@ -135,6 +146,18 @@
                   <option value="com.intellij.modules.lang" />
                 </set>
               </option>
+            </PluginData>
+          </value>
+        </entry>
+        <entry key="com.shuzijun.markdown-editor">
+          <value>
+            <PluginData>
+              <option name="dependencies">
+                <set>
+                  <option value="com.intellij.modules.lang" />
+                </set>
+              </option>
+              <option name="enabled" value="false" />
             </PluginData>
           </value>
         </entry>
@@ -246,6 +269,11 @@
                 </set>
               </option>
             </PluginData>
+          </value>
+        </entry>
+        <entry key="org.intellij.plugins.markdown">
+          <value>
+            <PluginData />
           </value>
         </entry>
         <entry key="org.jetbrains.IdeaVim-EasyMotion">
