@@ -271,6 +271,13 @@
             </PluginData>
           </value>
         </entry>
+        <entry key="org.intellij.plugins.junitgen">
+          <value>
+            <PluginData>
+              <option name="enabled" value="false" />
+            </PluginData>
+          </value>
+        </entry>
         <entry key="org.intellij.plugins.markdown">
           <value>
             <PluginData />
